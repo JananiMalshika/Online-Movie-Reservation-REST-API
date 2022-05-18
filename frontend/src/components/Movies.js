@@ -3,7 +3,7 @@ import axios from "axios";
 
 const NowShowingMovie = props =>(
     <div>
-    <div><img src={props.poster}/></div>
+    <div><img src={props.movies.poster}/></div>
         <div>
             <a className="btn btn-primary" href={`/bookNow/${props.movies._id}`}>
                 <i className="fa-solid fa-ticket"></i>&nbsp;Book Now

@@ -44,8 +44,8 @@ class Login extends Component{
                 if(Response.data.user !==null){
                     console.log(Response.data.user)
                     console.log(Response.data.user.usertype)
-                    if(Response.data.user.usertype==='admin')
-                        this.props.history.push("/adminDashBoard/"+Response.data.user.username);
+                    if(Response.data.user.usertype==='systemAdmin')
+                        this.props.history.push("/systemAdmin/"+Response.data.user.username);
                     else if(Response.data.user.usertype==='movieAdmin')
                         this.props.history.push("/movieAdmin/"+Response.data.user.username);
                     else
